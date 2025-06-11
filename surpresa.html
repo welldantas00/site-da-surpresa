@@ -11,14 +11,17 @@
       text-align: center;
       padding: 20px;
     }
+
     h1 {
       font-size: 2.5em;
       color: #ff69b4;
     }
+
     #contador {
       font-size: 1.5em;
       margin-top: 10px;
     }
+
     .mensagem {
       margin-top: 30px;
       font-size: 1.3em;
@@ -27,14 +30,23 @@
       border-radius: 12px;
       display: inline-block;
     }
-    .fotos {
-      margin-top: 40px;
+
+    .carousel {
+      position: relative;
+      margin: 40px auto;
+      max-width: 300px;
+      height: auto;
     }
-    .fotos img {
-      width: 250px;
-      margin: 10px;
+
+    .carousel img {
+      width: 100%;
       border-radius: 15px;
       box-shadow: 0 0 10px rgba(255,105,180,0.5);
+      display: none;
+    }
+
+    .carousel img.active {
+      display: block;
     }
   </style>
 </head>
@@ -46,11 +58,10 @@
     Oii gatinha!! Você é o amor da minha vida. Sou muito grato por ter você, te amo muito amor. ❤️❤️
   </div>
 
-  <div class="fotos">
-    <!-- Aqui o usuário deve adicionar manualmente as imagens em /fotos -->
-    <img src="fotos/foto01.jpg" alt="Foto 1">
-    <img src="fotos/foto02.jpg" alt="Foto 2">
-    <img src="fotos/foto03.jpg" alt="Foto 3">
+  <div class="carousel">
+    <img src="fotos/foto01.jpg" class="active" alt="Foto 1">
+    <img src="fotos/foto02.JPG" alt="Foto 2">
+    <img src="fotos/foto03.JPG" alt="Foto 3">
     <img src="fotos/foto04.jpg" alt="Foto 4">
     <img src="fotos/foto05.jpg" alt="Foto 5">
     <img src="fotos/foto06.jpg" alt="Foto 6">
@@ -60,32 +71,32 @@
     <img src="fotos/foto10.jpg" alt="Foto 10">
     <img src="fotos/foto11.jpg" alt="Foto 11">
     <img src="fotos/foto12.jpg" alt="Foto 12">
-    <img src="fotos/foto13.jpg" alt="Foto 13">
+    <img src="fotos/foto13.JPG" alt="Foto 13">
     <img src="fotos/foto14.jpg" alt="Foto 14">
     <img src="fotos/foto15.jpg" alt="Foto 15">
     <img src="fotos/foto16.jpg" alt="Foto 16">
     <img src="fotos/foto17.jpg" alt="Foto 17">
-    <img src="fotos/foto18.jpg" alt="Foto 18">
-    <img src="fotos/foto19.jpg" alt="Foto 19">
-    <img src="fotos/foto20.jpg" alt="Foto 20">
-    <img src="fotos/foto21.jpg" alt="Foto 21">
-    <img src="fotos/foto22.jpg" alt="Foto 22">
-    <img src="fotos/foto23.jpg" alt="Foto 23">
-    <img src="fotos/foto24.jpg" alt="Foto 24">
-    <img src="fotos/foto25.jpg" alt="Foto 25">
-    <img src="fotos/foto26.jpg" alt="Foto 26">
-    <img src="fotos/foto27.jpg" alt="Foto 27">
-    <img src="fotos/foto28.jpg" alt="Foto 28">
-    <img src="fotos/foto29.jpg" alt="Foto 29">
-    <img src="fotos/foto30.jpg" alt="Foto 30">
-    <img src="fotos/foto31.jpg" alt="Foto 31">
-    <img src="fotos/foto32.jpg" alt="Foto 32">
-    <img src="fotos/foto33.jpg" alt="Foto 33">
-    <img src="fotos/foto34.jpg" alt="Foto 34">
-    <img src="fotos/foto35.jpg" alt="Foto 35">
-    <img src="fotos/foto36.jpg" alt="Foto 36">
-    <img src="fotos/foto37.jpg" alt="Foto 37">
-    <img src="fotos/foto38.jpg" alt="Foto 38">
+    <img src="fotos/foto18.JPG" alt="Foto 18">
+    <img src="fotos/foto19.JPG" alt="Foto 19">
+    <img src="fotos/foto20.JPG" alt="Foto 20">
+    <img src="fotos/foto21.JPG" alt="Foto 21">
+    <img src="fotos/foto22.JPG" alt="Foto 22">
+    <img src="fotos/foto23.JPG" alt="Foto 23">
+    <img src="fotos/foto24.JPG" alt="Foto 24">
+    <img src="fotos/foto25.JPG" alt="Foto 25">
+    <img src="fotos/foto26.JPG" alt="Foto 26">
+    <img src="fotos/foto27.JPG" alt="Foto 27">
+    <img src="fotos/foto28.JPG" alt="Foto 28">
+    <img src="fotos/foto29.JPG" alt="Foto 29">
+    <img src="fotos/foto30.JPG" alt="Foto 30">
+    <img src="fotos/foto31.JPG" alt="Foto 31">
+    <img src="fotos/foto32.JPG" alt="Foto 32">
+    <img src="fotos/foto33.JPG" alt="Foto 33">
+    <img src="fotos/foto34.JPG" alt="Foto 34">
+    <img src="fotos/foto35.JPG" alt="Foto 35">
+    <img src="fotos/foto36.JPG" alt="Foto 36">
+    <img src="fotos/foto37.JPG" alt="Foto 37">
+    <img src="fotos/foto38.JPG" alt="Foto 38">
     <img src="fotos/foto39.jpg" alt="Foto 39">
     <img src="fotos/foto40.jpg" alt="Foto 40">
     <img src="fotos/foto41.jpg" alt="Foto 41">
@@ -94,13 +105,14 @@
     <img src="fotos/foto44.png" alt="Foto 44">
     <img src="fotos/foto45.jpg" alt="Foto 45">
     <img src="fotos/foto46.png" alt="Foto 46">
-    <img src="fotos/foto47.jpg" alt="Foto 47">
-    <img src="fotos/foto48.jpg" alt="Foto 48">
+    <img src="fotos/foto47.JPG" alt="Foto 47">
+    <img src="fotos/foto48.JPG" alt="Foto 48">
     <img src="fotos/foto49.jpeg" alt="Foto 49">
     <img src="fotos/foto50.jpg" alt="Foto 50">
   </div>
 
   <script>
+    // Contador
     const inicio = new Date("2017-09-19T15:00:00").getTime();
 
     function atualizarContador() {
@@ -123,6 +135,16 @@
 
     setInterval(atualizarContador, 1000);
     atualizarContador();
+
+    // Carrossel automático
+    const imagens = document.querySelectorAll('.carousel img');
+    let index = 0;
+
+    setInterval(() => {
+      imagens[index].classList.remove('active');
+      index = (index + 1) % imagens.length;
+      imagens[index].classList.add('active');
+    }, 3000);
   </script>
 </body>
 </html>
