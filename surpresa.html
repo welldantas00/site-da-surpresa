@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <title>Surpresa 💖</title>
+  <style>
+    body {
+      background-color: #0d0d0d;
+      color: white;
+      font-family: 'Segoe UI', sans-serif;
+      text-align: center;
+      padding: 20px;
+    }
+    h1 {
+      font-size: 2.5em;
+      color: #ff69b4;
+    }
+    #contador {
+      font-size: 1.5em;
+      margin-top: 10px;
+    }
+    .mensagem {
+      margin-top: 30px;
+      font-size: 1.3em;
+      padding: 20px;
+      background: #1a1a1a;
+      border-radius: 12px;
+      display: inline-block;
+    }
+    .fotos {
+      margin-top: 40px;
+    }
+    .fotos img {
+      width: 250px;
+      margin: 10px;
+      border-radius: 15px;
+      box-shadow: 0 0 10px rgba(255,105,180,0.5);
+    }
+  </style>
+</head>
+<body>
+  <h1>Juntos há:</h1>
+  <div id="contador">Carregando...</div>
+
+  <div class="mensagem">
+    Oii gatinha!! Você é o amor da minha vida. Sou muito grato por ter você, te amo muito amor. ❤️❤️
+  </div>
+
+  <div class="fotos">
+    <!-- Aqui o usuário deve adicionar manualmente as imagens em /fotos -->
+    <img src="fotos/foto01.jpg" alt="Foto 1">
+    <img src="fotos/foto02.jpg" alt="Foto 2">
+    <img src="fotos/foto03.jpg" alt="Foto 3">
+    <img src="fotos/foto04.jpg" alt="Foto 4">
+    <img src="fotos/foto05.jpg" alt="Foto 5">
+    <img src="fotos/foto06.jpg" alt="Foto 6">
+    <img src="fotos/foto07.jpg" alt="Foto 7">
+    <img src="fotos/foto08.jpg" alt="Foto 8">
+    <img src="fotos/foto09.jpg" alt="Foto 9">
+    <img src="fotos/foto10.jpg" alt="Foto 10">
+    <img src="fotos/foto11.jpg" alt="Foto 11">
+    <img src="fotos/foto12.jpg" alt="Foto 12">
+    <img src="fotos/foto13.jpg" alt="Foto 13">
+    <img src="fotos/foto14.jpg" alt="Foto 14">
+    <img src="fotos/foto15.jpg" alt="Foto 15">
+    <img src="fotos/foto16.jpg" alt="Foto 16">
+    <img src="fotos/foto17.jpg" alt="Foto 17">
+    <img src="fotos/foto18.jpg" alt="Foto 18">
+    <img src="fotos/foto19.jpg" alt="Foto 19">
+    <img src="fotos/foto20.jpg" alt="Foto 20">
+    <img src="fotos/foto21.jpg" alt="Foto 21">
+    <img src="fotos/foto22.jpg" alt="Foto 22">
+    <img src="fotos/foto23.jpg" alt="Foto 23">
+    <img src="fotos/foto24.jpg" alt="Foto 24">
+    <img src="fotos/foto25.jpg" alt="Foto 25">
+    <img src="fotos/foto26.jpg" alt="Foto 26">
+    <img src="fotos/foto27.jpg" alt="Foto 27">
+    <img src="fotos/foto28.jpg" alt="Foto 28">
+    <img src="fotos/foto29.jpg" alt="Foto 29">
+    <img src="fotos/foto30.jpg" alt="Foto 30">
+    <img src="fotos/foto31.jpg" alt="Foto 31">
+    <img src="fotos/foto32.jpg" alt="Foto 32">
+    <img src="fotos/foto33.jpg" alt="Foto 33">
+    <img src="fotos/foto34.jpg" alt="Foto 34">
+    <img src="fotos/foto35.jpg" alt="Foto 35">
+    <img src="fotos/foto36.jpg" alt="Foto 36">
+    <img src="fotos/foto37.jpg" alt="Foto 37">
+    <img src="fotos/foto38.jpg" alt="Foto 38">
+    <img src="fotos/foto39.jpg" alt="Foto 39">
+    <img src="fotos/foto40.jpg" alt="Foto 40">
+    <img src="fotos/foto41.jpg" alt="Foto 41">
+    <img src="fotos/foto42.png" alt="Foto 42">
+    <img src="fotos/foto43.png" alt="Foto 43">
+    <img src="fotos/foto44.png" alt="Foto 44">
+    <img src="fotos/foto45.jpg" alt="Foto 45">
+    <img src="fotos/foto46.png" alt="Foto 46">
+    <img src="fotos/foto47.jpg" alt="Foto 47">
+    <img src="fotos/foto48.jpg" alt="Foto 48">
+    <img src="fotos/foto49.jpeg" alt="Foto 49">
+    <img src="fotos/foto50.jpg" alt="Foto 50">
+  </div>
+
+  <script>
+    const inicio = new Date("2017-09-19T15:00:00").getTime();
+
+    function atualizarContador() {
+      const agora = new Date().getTime();
+      const diferenca = agora - inicio;
+
+      const dias = Math.floor(diferenca / (1000 * 60 * 60 * 24));
+      const horas = Math.floor((diferenca / (1000 * 60 * 60)) % 24);
+      const minutos = Math.floor((diferenca / (1000 * 60)) % 60);
+      const segundos = Math.floor((diferenca / 1000) % 60);
+
+      const anos = Math.floor(dias / 365.25);
+      const meses = Math.floor((dias % 365.25) / 30.44);
+      const diasRestantes = Math.floor((dias % 365.25) % 30.44);
+
+      document.getElementById("contador").innerHTML =
+        anos + " anos, " + meses + " meses, " + diasRestantes + " dias<br>" +
+        horas + " horas, " + minutos + " minutos e " + segundos + " segundos";
+    }
+
+    setInterval(atualizarContador, 1000);
+    atualizarContador();
+  </script>
+</body>
+</html>
